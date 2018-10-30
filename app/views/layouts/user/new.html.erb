@@ -1,0 +1,28 @@
+ <!-- <form action="/action_page.php">
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+ <form tag="/action_page.php">
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <text_field_tag name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <text_field_tag name="lastname" value="Mouse"><br><br>
+  <text_field_tag value="Submit">
+  </fieldset>
+</form>  -->
+
+<%= form_for :user do |f| %>
+  username: <%= f.text_field :username %><br />
+  email : <%= f.text_field :email %><br />
+  bio : <%= f.text_area :biography %><br />
+  <%= f.submit %>
+<% end %>
